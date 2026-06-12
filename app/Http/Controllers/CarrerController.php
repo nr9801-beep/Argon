@@ -6,6 +6,7 @@ use App\Models\Carrer;
 use App\Models\Student;
 use App\Http\Requests\CarrerRequest;
 
+//? prueva
 /**
  * Class CarrerController
  * @package App\Http\Controllers
