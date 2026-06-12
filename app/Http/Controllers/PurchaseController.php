@@ -23,7 +23,7 @@ class PurchaseController extends Controller
 
     public function store(PurchaseRequest $request) {
         Purchase::create($request->validated());
-        return redirect()->route('purchases.index')->with('success','las compras se a registrado exitosamente.');
+        return redirect()->route('purchases.index')->with('success','las compras se registraron exitosamente.');
     }
 
     public function show(string $id) {
@@ -41,7 +41,7 @@ class PurchaseController extends Controller
     public function update(PurchaseRequest $request, string $id) {
         $purchase = Purchase::findOrFail( $id );
         $purchase->update($request->validated());
-        return redirect()->route('purchases.index')->with('success','compras actualizado.');
+        return redirect()->route('purchases.index')->with('success',' compras se actualizado.');
     }
 
     public function destroy(string $id) {
